@@ -13,6 +13,9 @@ os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"]="true"
 os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
 
+os.environ["OPENAI_MODEL_NAME"]=os.getenv("OPENAI_MODEL_NAME")
+
+modelname = os.environ["OPENAI_MODEL_NAME"]
 ## Prompt Template
 
 prompt=ChatPromptTemplate.from_messages(
@@ -31,7 +34,16 @@ st.caption("🚀 A Streamlit chatbot powered by OpenAI using Lancghain")
 input_text=st.text_input("Enter text to search")
 
 # openAI LLm 
-llm=ChatOpenAI(model="gpt-3.5-turbo")
+#llm=ChatOpenAI(model="gpt-3.5-turbo")
+
+# llm = ChatOpenAI(
+#     model="llama3",
+#     base_url="http://localhost:11434/v1",
+#     api_key="NA"
+# )
+
+llm = ChatOpenAI(model=modelname)
+
 output_parser=StrOutputParser()
 chain=prompt|llm|output_parser
 
