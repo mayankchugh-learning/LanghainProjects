@@ -15,7 +15,7 @@ os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
 
 os.environ["OPENAI_MODEL_NAME"]=os.getenv("OPENAI_MODEL_NAME")
 
-modelname = os.environ["OPENAI_MODEL_NAME"]
+model = os.environ["OPENAI_MODEL_NAME"]
 ## Prompt Template
 
 prompt=ChatPromptTemplate.from_messages(
@@ -41,8 +41,7 @@ input_text=st.text_input("Enter text to search")
 #     base_url="http://localhost:11434/v1",
 #     api_key="NA"
 # )
-
-llm = ChatOpenAI(model=modelname)
+llm = ChatOpenAI(model=model)
 
 output_parser=StrOutputParser()
 chain=prompt|llm|output_parser
