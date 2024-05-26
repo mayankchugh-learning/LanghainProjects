@@ -21,7 +21,7 @@ prompt=ChatPromptTemplate.from_messages(
 )
 ## streamlit framework
 
-st.title("💬 Chatbot")
+st.title("💬 Chatbot using Ollama")
 st.caption("🚀 A Streamlit chatbot powered by Ollama using Langchain")
 
 if "messages" not in st.session_state:
