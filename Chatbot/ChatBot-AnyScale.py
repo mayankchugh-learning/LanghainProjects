@@ -38,9 +38,6 @@ st.caption("🚀 A Streamlit chatbot powered by OpenAI using Lancghain")
     
 input_text=st.text_input("Enter text to search")
 
-# openAI LLm 
-#llm=ChatOpenAI(model="gpt-3.5-turbo")
-
 llm = ChatOpenAI(
      model=model,
      base_url=anyscale_base_url,
