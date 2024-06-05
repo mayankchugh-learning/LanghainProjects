@@ -8,13 +8,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-os.environ["ANY_SCALE_API_KEY"]=os.getenv("ANY_SCALE_API_KEY")
+
 ## Langmith tracking
 os.environ["LANGCHAIN_TRACING_V2"]="true"
 os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
 
 # os.environ["OPENAI_MODEL_NAME"]=os.getenv("OPENAI_MODEL_NAME")
-
+os.environ["ANY_SCALE_API_KEY"]=os.getenv("ANY_SCALE_API_KEY")
 os.environ["ANY_SCALE_API_BASE"]=os.getenv("ANY_SCALE_API_BASE")
 anyscale_base_url = os.environ["ANY_SCALE_API_BASE"]
 anyscale_api = os.environ["ANY_SCALE_API_KEY"]

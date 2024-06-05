@@ -1,0 +1,9 @@
+langchain
+openai
+streamlit
+langchain-openai
+python-dotenv
+ipykernel
+transformers
+torch
+sentencepiece
