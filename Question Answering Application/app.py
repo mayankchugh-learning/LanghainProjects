@@ -1,5 +1,5 @@
-#Hello! It seems like you want to import the Streamlit library in Python. Streamlit is a powerful open-source framework used for building web applications with interactive data visualizations and machine learning models. To import Streamlit, you'll need to ensure that you have it installed in your Python environment.
-#Once you have Streamlit installed, you can import it into your Python script using the import statement,
+# Streamlit is a powerful open-source framework used for building web applications with interactive data visualizations and machine learning models. To import Streamlit, you'll need to ensure that you have it installed in your Python environment.
+# Once you have Streamlit installed, you can import it into your Python script using the import statement,
 
 import streamlit as st
 # Use a pipeline as a high-level helper
